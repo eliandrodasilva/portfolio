@@ -1,0 +1,21 @@
+:root{
+  --bg: rgb(14, 12, 18);
+  --fg: rgb(229, 227, 232);
+  --font-sans: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
