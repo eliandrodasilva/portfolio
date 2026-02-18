@@ -1,7 +1,13 @@
 :root{
   --bg: rgb(14, 12, 18);
+  --bg-card: rgb(21, 18, 28);
   --fg: rgb(229, 227, 232);
+  --fg-muted: rgb(136, 129, 152);
+  --primary: rgb(153, 92, 214);
+  --border: rgb(39, 35, 47);
+  --radius: 0.25rem;
   --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -19,3 +25,76 @@ a {
 ul {
   list-style: none;
 }
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* NAVBAR */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.nav-direita {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  color: var(--fg-muted);
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.alternar-tema {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--fg);
+  transition: all 0.2s;
+}
+
+.alternar-tema:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* MAIN DA PÁGINA */
