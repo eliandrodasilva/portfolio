@@ -204,6 +204,40 @@ a {
   color: var(--muted-foreground);
 }
 
+.home-glow-left {
+  position: absolute;
+  top: 25%;
+  left: -8rem;
+  height: 24rem;
+  width: 24rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.1);
+  filter: blur(80px);
+}
+
+.home-glow-right {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.1);
+  filter: blur(80px);
+}
+
+.home-glow-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 37rem;
+  width: 37rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.05);
+  filter: blur(80px);
+}
+
 .home-section {
   min-height: 100vh;
   display: flex;
