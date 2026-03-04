@@ -15,18 +15,44 @@
 <body>
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#home" class="nav-logo">~ eliandrows ~</a>
+            <a href="#home" class="nav-logo">~ eli ~</a>
 
             <div class="nav-links" id="desktopNav">
                 <a href="#home">Inicio</a>
                 <a href="#projects">Projetos</a>
-                <a href="#skills">Skills</a>
+                <a href="#skills">Habilidades</a>
                 <a href="#experience">Experiencia</a>
                 <a href="#education">Educacao</a>
                 <a href="#contact">Contato</a>
-                <button class="hand-drawn-border lang-btn" id="langBtnDesktop" aria-label="Toggle language"
-                    onclick="toggleLang()">EN</button>
+                <button class="hand-drawn-border lang-btn" id="langBtnDesktop" onclick="toggleLang()">EN</button>
             </div>
+
+            <div class="nav-mobile-controls">
+                <button class="hand-drawn-border lang-btn" id="langBtnMobile" onclick="toggleLang()">EN</button>
+                <button class="menu-btn" id="menuToggle" style="color: #7a6a5a" onclick="toggleMenu()">
+                    <svg class="icon-xl" id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                    <svg class="icon-xl" id="menuIconClose" style="display:none; color:#7a6a5a"
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" onclick="closeMenu()">Inicio</a>
+            <a href="#projects" onclick="closeMenu()">Projetos</a>
+            <a href="#skills" onclick="closeMenu()">Habilidades</a>
+            <a href="#experience" onclick="closeMenu()">Experiencia</a>
+            <a href="#education" onclick="closeMenu()">Educacao</a>
+            <a href="#contact" onclick="closeMenu()">Contato</a>
+        </div>
     </nav>
 
     <main>
@@ -34,14 +60,14 @@
             <div class="home-container">
                 <div class="tape">
                     <div class="home-photo hand-drawn-border">
-                        <img src="https://media.tenor.com/WlJsOVX2lysAAAAi/cat-tongue-cat.gif" />
+                        <img src="https://media1.tenor.com/m/PCJPPgHBMmgAAAAC/anime-animetape.gif" />
                     </div>
                 </div>
 
                 <div class="home-text">
                     <p class="home-greeting">Olá, eu sou o</p>
                     <h1 class="home-name">Eliandro Gomes da Silva</h1>
-                    <p class="home-underline hand-drawn-underline">Programador</p>
+                    <p class="home-underline hand-drawn-underline">Estudande de Engenharia de Software</p>
                     <p class="home-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -55,6 +81,155 @@
                                     d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
                             </svg>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Projetos</h2>
+                    <p>Alguns dos meus trabalhos favoritos</p>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/13/02/d2/1302d2645bbd69b86ff1b29caea60e2f.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3>XXX</h3>
+                            <p>XXX.</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">XXX</span>
+                                <span class="hand-drawn-border project-tag">XXX</span>
+                                <span class="hand-drawn-border project-tag">XXX</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span>Ver Projeto</span>
+                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3>etwahl</h3>
+                            <p>Bot de música para Discord, com suporte a
+                                reprodução via YouTube, controle por comandos, filas gerenciáveis e integração com APIs
+                                externas.</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">Python</span>
+                                <span class="hand-drawn-border project-tag">Nextcord</span>
+                                <span class="hand-drawn-border project-tag">FFMpeg</span>
+                                <span class="hand-drawn-border project-tag">Youtube API</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span>Ver Projeto</span>
+                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/ec/9f/46/ec9f4624a7ed58ae22deedaa703aa99c.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3>jogo da memória</h3>
+                            <p>Jogo da memória desenvolvido com HTML, CSS e
+                                JavaScript, consumindo dados de uma API externa para geração dinâmica das cartas e com
+                                lógica de comparação de pares.</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">HTML</span>
+                                <span class="hand-drawn-border project-tag">CSS</span>
+                                <span class="hand-drawn-border project-tag">JavaScript</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span>Ver Projeto</span>
+                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                                    <path fill-rule="evenodd"
+                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-alt">
+            <div class="section-inner">
+                <div class="section-header">
+                    <h2>Habilidades</h2>
+                    <p>Ferramentas e tecnologias que uso no dia a dia</p>
+                </div>
+
+                <div class="skills-grid" id="skillsGrid">
+                    <div class="hand-drawn-border skill-category">
+                        <h3 class="doodle-underline">Linguagens</h3>
+                        <div class="skill-tags">
+                            <span class="hand-drawn-border skill-tag">JavaScript</span>
+                            <span class="hand-drawn-border skill-tag">TypeScript</span>
+                            <span class="hand-drawn-border skill-tag">Python</span>
+                            <span class="hand-drawn-border skill-tag">HTML</span>
+                            <span class="hand-drawn-border skill-tag">CSS</span>
+                            <span class="hand-drawn-border skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="hand-drawn-border skill-category">
+                        <h3 class="doodle-underline">Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="hand-drawn-border skill-tag">React</span>
+                            <span class="hand-drawn-border skill-tag">Next.js</span>
+                            <span class="hand-drawn-border skill-tag">Node.js</span>
+                            <span class="hand-drawn-border skill-tag">Express</span>
+                            <span class="hand-drawn-border skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="hand-drawn-border skill-category">
+                        <h3 class="doodle-underline">Ferramentas</h3>
+                        <div class="skill-tags">
+                            <span class="hand-drawn-border skill-tag">Git</span>
+                            <span class="hand-drawn-border skill-tag">Docker</span>
+                            <span class="hand-drawn-border skill-tag">Figma</span>
+                            <span class="hand-drawn-border skill-tag">VS Code</span>
+                            <span class="hand-drawn-border skill-tag">Linux</span>
+                        </div>
+                    </div>
+
+                    <div class="hand-drawn-border skill-category">
+                        <h3 class="doodle-underline">Bancos de Dados</h3>
+                        <div class="skill-tags">
+                            <span class="hand-drawn-border skill-tag">PostgreSQL</span>
+                            <span class="hand-drawn-border skill-tag">My</span>
+                            <span class="hand-drawn-border skill-tag">Redis</span>
+                            <span class="hand-drawn-border skill-tag">Firebase</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -74,6 +249,7 @@
         </p>
         <p class="footer-sub">2026 ~ eliandrikas</p>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -83,7 +83,6 @@ a {
   z-index: 40;
   background-color: rgba(245, 240, 232, 0.8);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -138,6 +137,45 @@ a {
   background-color: var(--secondary);
 }
 
+.nav-mobile-controls {
+  display: none;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 4px;
+  display: none;
+  align-items: center;
+}
+
+.mobile-menu {
+  display: none;
+  /* background-color: var(--background); */
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu a {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--muted-foreground);
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.mobile-menu a:hover {
+  color: var(--foreground);
+}
+
 .section {
   padding: 6rem 1.5rem;
 }
@@ -185,8 +223,8 @@ a {
 
 .home-photo {
   position: relative;
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   transform: rotate(-2deg);
   overflow: hidden;
 }
@@ -195,7 +233,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: grayscale(30%) sepia(20%);
+  filter: grayscale(30%) sepia(85%);
 }
 
 .home-text {
@@ -245,6 +283,140 @@ a {
   opacity: 0.9;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 2.5rem;
+}
+
+.project-card {
+  background-color: var(--card);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: rotate(0.3deg) !important;
+}
+
+/* 
+animação de rotate do hover em loop usando keyframes
+
+.project-card {
+  background-color: var(--card);
+  overflow: hidden;
+}
+
+.project-card:hover {
+  animation: rotateLoop 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes rotateLoop {
+  from {
+    transform: rotate(-0.9deg);
+  }
+  to {
+    transform: rotate(0.9deg);
+  }
+} */
+
+.project-img {
+  /* o padrão era 12rem */
+  height: 12rem;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(40%) sepia(35%);
+  transition: filter 0.5s;
+}
+
+.project-card:hover .project-img img {
+  filter: grayscale(0%) sepia(0%);
+}
+
+.project-body {
+  padding: 1.25rem;
+}
+
+.project-body h3 {
+  font-size: 1.25rem;
+  color: var(--card-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.project-body p {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-tag {
+  font-size: 0.75rem;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+  padding: 0.25rem 0.5rem;
+}
+
+.project-link {
+  color: var(--primary);
+  font-size: 0.875rem;
+  transition: text-decoration 0.2s;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: var(--card);
+  padding: 1.5rem;
+}
+
+.skill-category h3 {
+  font-size: 1.25rem;
+  color: var(--card-foreground);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.skill-tag {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
 .footer {
   border-top: 1px solid var(--border);
   padding: 1em;
@@ -287,4 +459,52 @@ a {
 .icon-xl {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-mobile-controls {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .home-container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-underline {
+    margin: 0 auto;
+  }
+
+  .home-description {
+    margin: 0 auto;
+  }
+
+  .home-photo {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .home-name {
+    font-size: 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
