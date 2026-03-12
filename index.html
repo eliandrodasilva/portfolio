@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#f5f0e8" />
     <title>Eliandro | Portfolio</title>
 
+    <link rel="icon" href="./assets/images/icon.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -29,18 +30,10 @@
 
             <div class="nav-mobile-controls">
                 <button class="hand-drawn-border lang-btn" id="langBtnMobile" onclick="toggleLang()">EN</button>
-                <button class="menu-btn" id="menuToggle" style="color: #7a6a5a" onclick="toggleMenu()">
-                    <svg class="icon-xl" id="menuIconOpen" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                    <svg class="icon-xl" id="menuIconClose" style="display:none; color:#7a6a5a"
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                    </svg>
+                <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">
+                    <img class="icon-xl" id="menuIconOpen" src="./assets/svgs/menu-bars.svg" alt="Botão de Menu" />
+                    <img class="icon-xl" id="menuIconClose" style="display:none" src="./assets/svgs/close-x.svg"
+                        alt="Botão de Fechar Menu" />
                 </button>
             </div>
         </div>
@@ -72,17 +65,15 @@
                     <p class="home-greeting">Olá, eu sou o</p>
                     <h1 class="home-name">Eliandro Gomes da Silva</h1>
                     <p class="home-underline hand-drawn-underline">Programador Fullstack</p>
-                    <p class="home-description">Estudante de Engenharia de Software. Tenho conhecimento em algumas linguagens de programação e estou
+                    <p class="home-description">Estudante de Engenharia de Software. Tenho conhecimento em algumas
+                        linguagens de programação e estou
                         sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.
                     </p>
                     <div>
                         <a href="#projects" class="home-project-button hand-drawn-border">
                             <span>Veja meus projetos</span>
-                            <svg class="icon icon-md" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                            </svg>
+                            <img class="icon icon-md" src="./assets/svgs/arrow-downward.svg"
+                                alt="seta apontando para baixo" />
                         </a>
                     </div>
                 </div>
@@ -112,13 +103,8 @@
                             </div>
                             <a href="#" class="project-link">
                                 <span>Ver Projeto</span>
-                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-                                    <path fill-rule="evenodd"
-                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-                                </svg>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
                             </a>
                         </div>
                     </article>
@@ -141,13 +127,8 @@
                             </div>
                             <a href="#" class="project-link">
                                 <span>Ver Projeto</span>
-                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-                                    <path fill-rule="evenodd"
-                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-                                </svg>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
                             </a>
                         </div>
                     </article>
@@ -169,13 +150,8 @@
                             </div>
                             <a href="#" class="project-link">
                                 <span>Ver Projeto</span>
-                                <svg class="icon icon-sm" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-                                    <path fill-rule="evenodd"
-                                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-                                </svg>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
                             </a>
                         </div>
                     </article>
@@ -243,12 +219,7 @@
                     <div class="timeline-items">
                         <div class="timeline-item">
                             <div class="timeline-dot">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-                                    <rect width="20" height="14" x="2" y="6" rx="2" />
-                                </svg>
+                                <img src="./assets/svgs/work.svg" alt="icone de profissão">
                             </div>
                             <div class="timeline-content">
                                 <div class="hand-drawn-border timeline-card">
@@ -270,14 +241,7 @@
 
                         <div class="timeline-item reverse">
                             <div class="timeline-dot">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
-                                    <path d="M22 10v6" />
-                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
-                                </svg>
+                                <img src="./assets/svgs/school.svg" alt="icone de educação">
                             </div>
                             <div class="timeline-content">
                                 <div class="hand-drawn-border timeline-card">
@@ -301,14 +265,7 @@
 
                         <div class="timeline-item">
                             <div class="timeline-dot">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
-                                    <path d="M22 10v6" />
-                                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
-                                </svg>
+                                <img src="./assets/svgs/school.svg" alt="icone de educação">
                             </div>
                             <div class="timeline-content">
                                 <div class="hand-drawn-border timeline-card">
@@ -375,12 +332,8 @@
                                     placeholder="Sua mensagem aqui..."></textarea>
                             </div>
                             <button type="submit" class="contact-submit hand-drawn-border">
-                                <svg class="icon icon-md" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                                    <path
-                                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
-                                </svg>
                                 <span>Enviar Mensagem</span>
+                                <img src="./assets/svgs/send.svg" alt="Icone de enviar mensagem" class="icon-lg"/>
                             </button>
                             <p class="contact-success" id="contactSuccess">Mensagem
                                 enviada com
@@ -392,11 +345,7 @@
                         <p>Tem um projeto em mente ou quer trocar uma ideia? Me mande uma mensagem.</p>
                         <div>
                             <a href="mailto:eliandro.gomes42@gmail.com" class="contact-email">
-                                <svg class="icon icon-lg" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                                </svg>
+                                <img src="./assets/svgs/mail.svg" alt="Icone de email" class="icon-xl" />
                                 <span>eliandro.gomes42@gmail.com</span>
                             </a>
                         </div>
@@ -405,19 +354,11 @@
                             <div class="social-links">
                                 <a href="https://github.com/eliandrodasilva" target="_blank" rel="noopener noreferrer"
                                     class="social-link hand-drawn-border" aria-label="GitHub">
-                                    <svg class="icon icon-xl" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                                    </svg>
+                                    <img src="./assets/svgs/github.svg" alt="icone do github" class="icon-xl">
                                 </a>
                                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
                                     class="social-link hand-drawn-border" aria-label="LinkedIn">
-                                    <svg class="icon icon-xl" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                        <path
-                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                                    </svg>
+                                    <img src="./assets/svgs/linkedin.svg" alt="icone do linkedin" class="icon-xl" />
                                 </a>
                             </div>
                         </div>
@@ -430,13 +371,7 @@
     <footer class="footer">
         <p class="footer-text">
             <span>Feito com ódio e café</span>
-            <svg class="icon icon-md" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-cup-hot" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6zM13 12.5a2 2 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5M2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175" />
-                <path
-                    d="m4.4.8-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 3.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 6.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8m3 0-.003.004-.014.019a4 4 0 0 0-.204.31 2 2 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.6.6 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3 3 0 0 1-.202.388 5 5 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4 4 0 0 0 .204-.31 2 2 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.6.6 0 0 0-.09-.252A4 4 0 0 0 9.6 2.8l-.01-.012a5 5 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a6 6 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8" />
-            </svg>
+            <img src="./assets/svgs/coffee.svg" alt="Icone de café" class="icon-xl" />
         </p>
         <p class="footer-sub">2026 ~ eliandrikas</p>
     </footer>
