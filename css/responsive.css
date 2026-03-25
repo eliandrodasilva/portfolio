@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-mobile-controls {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .home-container {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .home-glow-middle {
+    position: relative;
+    display: none;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-underline {
+    margin: 0 auto;
+  }
+
+  .home-description {
+    margin: 0 auto;
+  }
+
+  .home-photo {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .home-name {
+    font-size: 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timeline-line {
+    left: 50%;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+    width: 50%;
+  }
+
+  .timeline-item:not(.reverse) .timeline-content {
+    padding-right: 4rem;
+  }
+
+  .timeline-item.reverse .timeline-content {
+    padding-left: 4rem;
+  }
+
+  .timeline-dot {
+    left: 50%;
+  }
+
+  .timeline-item {
+    flex-direction: row;
+  }
+
+  .timeline-item.reverse {
+    flex-direction: row-reverse;
+  }
+}

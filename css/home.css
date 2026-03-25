@@ -1,0 +1,113 @@
+.home-glow-left {
+  position: absolute;
+  top: 25%;
+  left: -8rem;
+  height: 24rem;
+  width: 24rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.1);
+  filter: blur(80px);
+}
+
+.home-glow-right {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.1);
+  filter: blur(80px);
+}
+
+.home-glow-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 37rem;
+  width: 37rem;
+  border-radius: 50%;
+  background: hsla(29, 43%, 59%, 0.05);
+  pointer-events: none;
+  filter: blur(80px);
+}
+
+.home-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.home-photo {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  transform: rotate(-2deg);
+  overflow: hidden;
+}
+
+.home-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(30%) sepia(85%);
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home-greeting {
+  color: var(--muted-foreground);
+  font-size: 1.125rem;
+}
+
+.home-name {
+  font-size: 3.75rem;
+  color: var(--foreground);
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.home-underline {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: inline-block;
+  width: fit-content;
+}
+
+.home-description {
+  color: var(--muted-foreground);
+  max-width: 28rem;
+}
+
+.home-project-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  transition: opacity ease 0.3s;
+}
+
+.home-project-button:hover {
+  opacity: 0.9;
+}
