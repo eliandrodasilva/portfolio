@@ -19,12 +19,12 @@
             <a href="#home" class="nav-logo">~ eli ~</a>
 
             <div class="nav-links" id="desktopNav">
-                <a href="#home">Inicio</a>
-                <a href="#projects">Projetos</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#api">API</a>
-                <a href="#contact">Contato</a>
+                <a href="#home" data-i18n="nav.home">Inicio</a>
+                <a href="#projects" data-i18n="nav.projects">Projetos</a>
+                <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+                <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+                <a href="#api" data-i18n="nav.api">API</a>
+                <a href="#contact" data-i18n="nav.contact">Contato</a>
                 <button class="hand-drawn-border lang-btn" id="langBtnDesktop" onclick="toggleLang()">EN</button>
             </div>
 
@@ -39,12 +39,12 @@
         </div>
 
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#home" onclick="closeMenu()">Inicio</a>
-            <a href="#projects" onclick="closeMenu()">Projetos</a>
-            <a href="#skills" onclick="closeMenu()">Habilidades</a>
-            <a href="#experience" onclick="closeMenu()">Experiencia</a>
-            <a href="#api" onclick="closeMenu()">API</a>
-            <a href="#contact" onclick="closeMenu()">Contato</a>
+            <a href="#home" onclick="closeMenu()" data-i18n="nav.home">Inicio</a>
+            <a href="#projects" onclick="closeMenu()" data-i18n="nav.projects">Projetos</a>
+            <a href="#skills" onclick="closeMenu()" data-i18n="nav.skills">Habilidades</a>
+            <a href="#experience" onclick="closeMenu()" data-i18n="nav.experience">Experiencia</a>
+            <a href="#api" onclick="closeMenu()" data-i18n="nav.api">API</a>
+            <a href="#contact" onclick="closeMenu()" data-i18n="nav.contact">Contato</a>
         </div>
     </nav>
 
@@ -63,16 +63,16 @@
                 </div>
 
                 <div class="home-text">
-                    <p class="home-greeting">Olá, eu sou o</p>
-                    <h1 class="home-name">Eliandro Gomes da Silva</h1>
-                    <p class="home-underline hand-drawn-underline">Programador Fullstack</p>
-                    <p class="home-description">Estudante de Engenharia de Software. Tenho conhecimento em algumas
+                    <p class="home-greeting" data-i18n="home.greeting">Olá, eu sou o</p>
+                    <h1 class="home-name" data-i18n="home.title">Eliandro Gomes da Silva</h1>
+                    <p class="home-underline hand-drawn-underline" data-i18n="home.subtitle">Programador Fullstack</p>
+                    <p class="home-description" data-i18n="home.description">Estudante de Engenharia de Software. Tenho conhecimento em algumas
                         linguagens de programação e estou
                         sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.
                     </p>
                     <div>
                         <a href="#projects" class="home-project-button hand-drawn-border">
-                            <span>Veja meus projetos</span>
+                            <span data-i18n="home.cta">Veja meus projetos</span>
                             <img class="icon icon-md" src="./assets/svgs/arrow-downward.svg"
                                 alt="seta apontando para baixo" />
                         </a>
@@ -84,26 +84,49 @@
         <section id="projects" class="section">
             <div class="section-inner">
                 <div class="section-header">
-                    <h2>Projetos</h2>
-                    <p>Alguns dos meus trabalhos favoritos</p>
+                    <h2 data-i18n="projects.title">Projetos</h2>
+                    <p data-i18n="projects.subtitle">Alguns dos meus trabalhos favoritos</p>
                 </div>
 
                 <div class="projects-grid" id="projectsGrid">
+                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="projects.items.0.title">etwahl</h3>
+                            <p data-i18n="projects.items.0.description">Bot de música para Discord, com suporte a
+                                reprodução via YouTube.</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">Python</span>
+                                <span class="hand-drawn-border project-tag">Nextcord</span>
+                                <span class="hand-drawn-border project-tag">FFMpeg</span>
+                                <span class="hand-drawn-border project-tag">Youtube API</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
+                            </a>
+                        </div>
+                    </article>
+
                     <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
                         <div class="project-img">
                             <img src="https://i.pinimg.com/736x/13/02/d2/1302d2645bbd69b86ff1b29caea60e2f.jpg"
                                 loading="lazy" />
                         </div>
                         <div class="project-body">
-                            <h3>XXX</h3>
-                            <p>XXX.</p>
+                            <h3 data-i18n="projects.items.1.title">Capital Atelier</h3>
+                            <p data-i18n="projects.items.1.description">XXX.</p>
                             <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">XXX</span>
-                                <span class="hand-drawn-border project-tag">XXX</span>
-                                <span class="hand-drawn-border project-tag">XXX</span>
+                                <span class="hand-drawn-border project-tag">React</span>
+                                <span class="hand-drawn-border project-tag">Spring Boot</span>
+                                <span class="hand-drawn-border project-tag">MySql</span>
                             </div>
                             <a href="#" class="project-link">
-                                <span>Ver Projeto</span>
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
                                 <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
                                     alt="Icone abrir link em nova aba">
                             </a>
@@ -116,18 +139,57 @@
                                 loading="lazy" />
                         </div>
                         <div class="project-body">
-                            <h3>etwahl</h3>
-                            <p>Bot de música para Discord, com suporte a
-                                reprodução via YouTube, controle por comandos, filas gerenciáveis e integração com APIs
-                                externas.</p>
+                            <h3 data-i18n="projects.items.2.title">Fleet Management System</h3>
+                            <p data-i18n="projects.items.2.description">Bssssssssssssssssssssssss</p>
                             <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">Python</span>
-                                <span class="hand-drawn-border project-tag">Nextcord</span>
-                                <span class="hand-drawn-border project-tag">FFMpeg</span>
-                                <span class="hand-drawn-border project-tag">Youtube API</span>
+                                <span class="hand-drawn-border project-tag">Java</span>
+                                <span class="hand-drawn-border project-tag">Maven</span>
+                                <span class="hand-drawn-border project-tag">JPA</span>
+                                <span class="hand-drawn-border project-tag">Hibernate</span>
+                                <span class="hand-drawn-border project-tag">MySql</span>
                             </div>
                             <a href="#" class="project-link">
-                                <span>Ver Projeto</span>
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
+                            </a>
+                        </div>
+                    </article>
+
+                    
+
+                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="projects.items.3.title">risc16-archsim</h3>
+                            <p data-i18n="projects.items.3.description"> RISC 16-bit architecture simulator in Java. Monocycle and pipelined models.</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">Java</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
+                                    alt="Icone abrir link em nova aba">
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+                        <div class="project-img">
+                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
+                                loading="lazy" />
+                        </div>
+                        <div class="project-body">
+                            <h3 data-i18n="projects.items.4.title">cache-sim</h3>
+                            <p data-i18n="projects.items.4.description">Memory hierarchy simulator in C++. Configurable set-associative cache levels and main memory with read/write policies</p>
+                            <div class="project-tags">
+                                <span class="hand-drawn-border project-tag">C++</span>
+                            </div>
+                            <a href="#" class="project-link">
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
                                 <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
                                     alt="Icone abrir link em nova aba">
                             </a>
@@ -140,17 +202,16 @@
                                 loading="lazy" />
                         </div>
                         <div class="project-body">
-                            <h3>Front-end Game</h3>
-                            <p>Game interativo com HTML, CSS e
-                                JavaScript, consumindo dados de uma API externa para geração dinâmica das cartas e com
-                                lógica de comparação de pares.</p>
+                            <h3 data-i18n="projects.items.5.title">Memory Game</h3>
+                            <p data-i18n="projects.items.5.description">Game interativo com HTML, CSS e
+                                JavaScript, consumindo dados de uma API externa.</p>
                             <div class="project-tags">
                                 <span class="hand-drawn-border project-tag">HTML</span>
                                 <span class="hand-drawn-border project-tag">CSS</span>
                                 <span class="hand-drawn-border project-tag">JavaScript</span>
                             </div>
                             <a href="#" class="project-link">
-                                <span>Ver Projeto</span>
+                                <span data-i18n="projects.viewProject">Ver Projeto</span>
                                 <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
                                     alt="Icone abrir link em nova aba">
                             </a>
@@ -163,14 +224,14 @@
         <section id="skills" class="section section-alt">
             <div class="section-inner">
                 <div class="section-header">
-                    <h2>Habilidades</h2>
-                    <p>Ferramentas e tecnologias que uso no dia a dia</p>
+                    <h2 data-i18n="skills.title">Habilidades</h2>
+                    <p data-i18n="skills.subtitle">Ferramentas e tecnologias que uso no dia a dia</p>
                 </div>
 
                 <div class="skills-grid" id="skillsGrid">
                     <div class="tape">
                         <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline">Linguagens</h3>
+                            <h3 class="doodle-underline" data-i18n="skills.languages">Linguagens</h3>
                             <div class="skill-tags">
                                 <span class="hand-drawn-border skill-tag">Python</span>
                                 <span class="hand-drawn-border skill-tag">JavaScript</span>
@@ -182,7 +243,7 @@
 
                     <div class="tape">
                         <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline">Frameworks</h3>
+                            <h3 class="doodle-underline" data-i18n="skills.frameworks">Frameworks</h3>
                             <div class="skill-tags">
                                 <span class="hand-drawn-border skill-tag">React</span>
                                 <span class="hand-drawn-border skill-tag">Tailwind CSS</span>
@@ -193,7 +254,7 @@
 
                     <div class="tape">
                         <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline">Ferramentas</h3>
+                            <h3 class="doodle-underline" data-i18n="skills.tools">Ferramentas</h3>
                             <div class="skill-tags">
                                 <span class="hand-drawn-border skill-tag">VS Code</span>
                                 <span class="hand-drawn-border skill-tag">Git</span>
@@ -204,7 +265,7 @@
 
                     <div class="tape">
                         <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline">Bancos de Dados</h3>
+                            <h3 class="doodle-underline" data-i18n="skills.database">Bancos de Dados</h3>
                             <div class="skill-tags">
                                 <span class="hand-drawn-border skill-tag">PostgreSQL</span>
                                 <span class="hand-drawn-border skill-tag">MySql</span>
@@ -233,19 +294,19 @@
                             <div class="timeline-content">
                                 <div class="tape">
                                     <div class="hand-drawn-border timeline-card">
-                                        <span class="timeline-period">2025 - Presente</span>
-                                        <h3 class="timeline-title">Membro Desenvolvedor - CodeLab IFPR</h3>
-                                        <p class="timeline-org">Laboratório de Extensão em Desenvolvimento Tecnológico
+                                        <span class="timeline-period" data-i18n="experience.items.0.period">2025 - Presente</span>
+                                        <h3 class="timeline-title" data-i18n="experience.items.0.title">Membro Desenvolvedor - CodeLab IFPR</h3>
+                                        <p class="timeline-org" data-i18n="experience.items.0.organization">Laboratório de Extensão em Desenvolvimento Tecnológico
                                         </p>
-                                        <p class="timeline-desc">Desenvolvimento de soluções tecnológicas sob demanda
+                                        <p class="timeline-desc" data-i18n="experience.items.0.description">Desenvolvimento de soluções tecnológicas sob demanda
                                             para
                                             comunidade externa,
                                             utilizando boas práticas de engenharia de software, versionamento com Git,
                                             metodologias ágeis e arquitetura orientada a projetos.</p>
                                         <div class="timeline-tags">
-                                            <span class="tag">Scrum</span>
-                                            <span class="tag">Trabalho em Equipe</span>
-                                            <span class="tag">Extensão Universitária</span>
+                                            <span class="tag" data-i18n="experience.items.0.tagone">Scrum</span>
+                                            <span class="tag" data-i18n="experience.items.0.tagtwo">Trabalho em Equipe</span>
+                                            <span class="tag" data-i18n="experience.items.0.tagthree">Extensão Universitária</span>
                                         </div>
                                     </div>
                                 </div>
@@ -259,20 +320,20 @@
                             <div class="timeline-content">
                                 <div class="tape">
                                     <div class="hand-drawn-border timeline-card">
-                                        <span class="timeline-period">2024 - Presente</span>
-                                        <h3 class="timeline-title">Bacharelado em Engenharia de Software</h3>
-                                        <p class="timeline-org">Instituto Federal do Paraná (IFPR) - Paranavaí</p>
-                                        <p class="timeline-desc">Graduação focada em análise, projeto, desenvolvimento e
+                                        <span class="timeline-period" data-i18n="experience.items.1.period">2024 - Presente</span>
+                                        <h3 class="timeline-title" data-i18n="experience.items.1.title">Bacharelado em Engenharia de Software</h3>
+                                        <p class="timeline-org" data-i18n="experience.items.1.organization">Instituto Federal do Paraná (IFPR) - Paranavaí</p>
+                                        <p class="timeline-desc" data-i18n="experience.items.1.description">Graduação focada em análise, projeto, desenvolvimento e
                                             manutenção de sistemas de software.
                                             Formação com ênfase em engenharia de requisitos, arquitetura de software,
                                             estruturas de dados, banco de dados, metodologias ágeis e gestão de
                                             projetos.
                                         </p>
                                         <div class="timeline-tags">
-                                            <span class="tag">Arquitetura de Software</span>
-                                            <span class="tag">Banco de Dados</span>
-                                            <span class="tag">Estruturas de Dados</span>
-                                            <span class="tag">Metodologias Ágeis</span>
+                                            <span class="tag" data-i18n="experience.items.1.tagone">Arquitetura de Software</span>
+                                            <span class="tag" data-i18n="experience.items.1.tagtwo">Banco de Dados</span>
+                                            <span class="tag" data-i18n="experience.items.1.tagthree">Estruturas de Dados</span>
+                                            <span class="tag" data-i18n="experience.items.1.tagfour">Metodologias Ágeis</span>
                                         </div>
                                     </div>
                                 </div>
@@ -286,11 +347,11 @@
                             <div class="timeline-content">
                                 <div class="tape">
                                     <div class="hand-drawn-border timeline-card">
-                                        <span class="timeline-period">2021</span>
-                                        <h3 class="timeline-title">Formação em Programação - Programa Edutech Paraná
+                                        <span class="timeline-period" data-i18n="experience.items.2.period">2021</span>
+                                        <h3 class="timeline-title" data-i18n="experience.items.2.title">Formação em Programação - Programa Edutech Paraná
                                         </h3>
-                                        <p class="timeline-org">Alura | Edutech</p>
-                                        <p class="timeline-desc">
+                                        <p class="timeline-org" data-i18n="experience.items.2.organization">Alura | Edutech</p>
+                                        <p class="timeline-desc" data-i18n="experience.items.2.description">
                                             Conclusão de diversos cursos de programação com foco em desenvolvimento em
                                             Python e lógica de programação.
                                             Aprendizados incluem: fundamentos da linguagem Python,
@@ -301,11 +362,10 @@
                                             de Programação I e II.
                                         </p>
                                         <div class="timeline-tags">
-                                            <span class="tag">Python</span>
-                                            <span class="tag">POO</span>
-                                            <span class="tag">Tratamento de Erros</span>
-                                            <span class="tag">Design Patterns</span>
-                                            <span class="tag">JavaScript</span>
+                                            <span class="tag" data-i18n="experience.items.2.tagone">Python</span>
+                                            <span class="tag" data-i18n="experience.items.2.tagtwo">Lógica de Programação</span>
+                                            <span class="tag" data-i18n="experience.items.2.tagthree">JavaScript</span>
+                                            <span class="tag" data-i18n="experience.items.2.tagfour">Design Patterns</span>
                                         </div>
                                     </div>
                                 </div>
@@ -320,8 +380,8 @@
         <section id="api" class="section section-alt">
             <div class="section-inner">
                 <div class="section-header">
-                    <h2>API</h2>
-                    <p>COLOCAR UMA API AQUI </p>
+                    <h2 data-i18n="api.title">API</h2>
+                    <p data-i18n="api.subtitle">COLOCAR UMA API AQUI </p>
                 </div>
 
                 <div class="api-content" id="apiContent">
@@ -332,38 +392,38 @@
         <section id="contact" class="section">
             <div class="section-inner">
                 <div class="section-header">
-                    <h2>Contato</h2>
-                    <p>Vamos conversar!</p>
+                    <h2 data-i18n="contact.title">Contato</h2>
+                    <p data-i18n="contact.subtitle">Vamos conversar!</p>
                 </div>
 
                 <div class="contact-grid">
                     <div class="contact-form-wrapper">
                         <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
                             <div>
-                                <label for="contactName">Nome</label>
-                                <input type="text" id="contactName" required placeholder="Seu nome" />
+                                <label for="contactName" data-i18n-label="contact.name">Nome</label>
+                                <input type="text" id="contactName" required data-i18n-placeholder="contact.namePlaceholder" placeholder="Seu nome" />
                             </div>
                             <div>
-                                <label for="contactEmail">E-mail</label>
-                                <input type="email" id="contactEmail" required placeholder="seu@email.com" />
+                                <label for="contactEmail" data-i18n-label="contact.email">E-mail</label>
+                                <input type="email" id="contactEmail" required data-i18n-placeholder="contact.emailPlaceholder" placeholder="seu@email.com" />
                             </div>
                             <div>
-                                <label for="contactMessage">Mensagem</label>
+                                <label for="contactMessage" data-i18n-label="contact.message">Mensagem</label>
                                 <textarea id="contactMessage" required rows="5"
-                                    placeholder="Sua mensagem aqui..."></textarea>
+                                    data-i18n-placeholder="contact.messagePlaceholder" placeholder="Sua mensagem aqui..."></textarea>
                             </div>
                             <button type="submit" class="contact-submit hand-drawn-border">
-                                <span>Enviar Mensagem</span>
+                                <span data-i18n="contact.send">Enviar Mensagem</span>
                                 <img src="./assets/svgs/send.svg" alt="Icone de enviar mensagem" class="icon-lg" />
                             </button>
-                            <p class="contact-success" id="contactSuccess">Mensagem
+                            <p class="contact-success" id="contactSuccess" data-i18n="contact.success">Mensagem
                                 enviada com
                                 sucesso!</p>
                         </form>
                     </div>
 
                     <div class="contact-info">
-                        <p>Tem um projeto em mente ou quer trocar uma ideia? Me mande uma mensagem.</p>
+                        <p data-i18n="contact.description">Tem um projeto em mente ou quer trocar uma ideia? Me mande uma mensagem.</p>
                         <div>
                             <a href="mailto:eliandro.gomes42@gmail.com" class="contact-email">
                                 <img src="./assets/svgs/mail.svg" alt="Icone de email" class="icon-xl" />
@@ -371,7 +431,7 @@
                             </a>
                         </div>
                         <div>
-                            <h3 class="social-title">Redes Sociais</h3>
+                            <h3 class="social-title" data-i18n="contact.social">Redes Sociais</h3>
                             <div class="social-links">
                                 <a href="https://github.com/eliandrodasilva" target="_blank" rel="noopener noreferrer"
                                     class="social-link hand-drawn-border" aria-label="GitHub">
@@ -391,10 +451,10 @@
 
     <footer class="footer">
         <p class="footer-text">
-            <span>Feito com ódio e café</span>
+            <span data-i18n="footer.text">Feito com ódio e café</span>
             <img src="./assets/svgs/coffee.svg" alt="Icone de café" class="icon-xl" />
         </p>
-        <p class="footer-sub">2026 ~ eliandrikas</p>
+        <p class="footer-sub" data-i18n="footer.year">2026 ~ eliandrikas</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

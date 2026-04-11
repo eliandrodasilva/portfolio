@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "api": "API",
+    "contact": "Contato"
+  },
+  "home": {
+    "greeting": "Olá, eu sou o",
+    "title": "Eliandro Gomes da Silva",
+    "subtitle": "Programador Fullstack",
+    "description": "Estudante de Engenharia de Software. Tenho conhecimento em algumas linguagens de programação e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.",
+    "cta": "Veja meus projetos"
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Alguns dos meus trabalhos favoritos",
+    "viewProject": "Ver Projeto",
+    "items": [
+      {
+        "title": "etwahl",
+        "description": "Bot de música para Discord, com suporte a reprodução via YouTube."
+      },
+      {
+        "title": "Capital Atelier",
+        "description": "Plataforma de e-commerce de moda com sistema integrado de gerenciamento de estoque."
+      },
+      {
+        "title": "Fleet Management System",
+        "description": "Sistema abrangente para gerenciamento de frotas de veículos e rastreamento de operações logísticas."
+      },
+      {
+        "title": "risc16-archsim",
+        "description": "Simulador de arquitetura RISC 16-bit em Java. Modelos monociclo e pipeline."
+      },
+      {
+        "title": "cache-sim",
+        "description": "Simulador de hierarquia de memória em C++. Níveis de cache set-associative configurável e memória principal com políticas de leitura/escrita."
+      },
+      {
+        "title": "Memory Game",
+        "description": "Jogo interativo com HTML, CSS e JavaScript, consumindo dados de uma API externa."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Ferramentas e tecnologias que uso no dia a dia",
+    "languages": "Linguagens",
+    "frameworks": "Frameworks",
+    "tools": "Ferramentas",
+    "database": "Bancos de Dados"
+  },
+  "experience": {
+    "title": "Experiência e Educação",
+    "subtitle": "Minha trajetória profissional",
+    "items": [
+      {
+        "period": "2025 - Presente",
+        "title": "Membro Desenvolvedor - CodeLab IFPR",
+        "organization": "Laboratório de Extensão em Desenvolvimento Tecnológico",
+        "description": "Desenvolvimento de soluções tecnológicas sob demanda para comunidade externa, utilizando boas práticas de engenharia de software, versionamento com Git, metodologias ágeis e arquitetura orientada a projetos.",
+        "tagone": "Scrum",
+        "tagtwo": "Trabalho em Equipe",
+        "tagthree": "Extensão Universitária"
+      },
+      {
+        "period": "2024 - Presente",
+        "title": "Bacharelado em Engenharia de Software",
+        "organization": "Instituto Federal do Paraná (IFPR) - Paranavaí",
+        "description": "Graduação focada em análise, projeto, desenvolvimento e manutenção de sistemas de software. Formação com ênfase em engenharia de requisitos, arquitetura de software, estruturas de dados, banco de dados, metodologias ágeis e gestão de projetos.",
+        "tagone": "Arquitetura de Software",
+        "tagtwo": "Banco de Dados",
+        "tagthree": "Estruturas de Dados",
+        "tagfour": "Metodologias Ágeis"
+      },
+      {
+        "period": "2021",
+        "title": "Formação em Programação - Programa Edutech Paraná",
+        "organization": "Alura | Edutech",
+        "description": "Conclusão de diversos cursos de programação com foco em desenvolvimento em Python e lógica de programação. Aprendizados incluem: fundamentos da linguagem Python, orientação a objetos, tratamento de erros, além de conceitos de Design Patterns. Também foram desenvolvidos projetos práticos em JavaScript nos módulos de Lógica de Programação I e II.",
+        "tagone": "Python",
+        "tagtwo": "Lógica de Programação",
+        "tagthree": "JavaScript",
+        "tagfour": "Design Patterns"
+      }
+    ]
+  },
+  "api": {
+    "title": "API",
+    "subtitle": "COLOCAR UMA API AQUI"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar!",
+    "name": "Nome",
+    "email": "E-mail",
+    "message": "Mensagem",
+    "namePlaceholder": "Seu nome",
+    "emailPlaceholder": "seu@email.com",
+    "messagePlaceholder": "Sua mensagem aqui...",
+    "send": "Enviar Mensagem",
+    "success": "Mensagem enviada com sucesso!",
+    "description": "Tem um projeto em mente ou quer trocar uma ideia? Me mande uma mensagem.",
+    "social": "Redes Sociais"
+  },
+  "footer": {
+    "text": "Feito com ódio e café",
+    "year": "2026 ~ eliandrikas"
+  }
+}

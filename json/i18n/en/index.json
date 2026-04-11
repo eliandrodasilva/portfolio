@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "skills": "Skills",
+    "experience": "Experience",
+    "api": "API",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hello, I am",
+    "title": "Eliandro Gomes da Silva",
+    "subtitle": "Fullstack Programmer",
+    "description": "Software Engineering student. I have knowledge in some programming languages and I'm always seeking to learn new technologies and improve my skills.",
+    "cta": "See my projects"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Some of my favorite works",
+    "viewProject": "View Project",
+    "items": [
+      {
+        "title": "etwahl",
+        "description": "Music bot for Discord, with support for YouTube playback."
+      },
+      {
+        "title": "Capital Atelier",
+        "description": "Fashion e-commerce platform with integrated inventory management system."
+      },
+      {
+        "title": "Fleet Management System",
+        "description": "Comprehensive system for managing vehicle fleets and tracking logistics operations."
+      },
+      {
+        "title": "risc16-archsim",
+        "description": "RISC 16-bit architecture simulator in Java. Monocycle and pipelined models."
+      },
+      {
+        "title": "cache-sim",
+        "description": "Memory hierarchy simulator in C++. Configurable set-associative cache levels and main memory with read/write policies."
+      },
+      {
+        "title": "Memory Game",
+        "description": "Interactive game with HTML, CSS and JavaScript, consuming data from an external API."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Tools and technologies I use daily",
+    "languages": "Languages",
+    "frameworks": "Frameworks",
+    "tools": "Tools",
+    "database": "Databases"
+  },
+  "experience": {
+    "title": "Experience & Education",
+    "subtitle": "My professional journey",
+    "items": [
+      {
+        "period": "2025 - Present",
+        "title": "Developer Member - CodeLab IFPR",
+        "organization": "Laboratory of Extension in Technological Development",
+        "description": "Development of technological solutions on demand for external community, using software engineering best practices, Git versioning, agile methodologies and project-oriented architecture.",
+        "tagone": "Scrum",
+        "tagtwo": "Teamwork",
+        "tagthree": "University Extension"
+      },
+      {
+        "period": "2024 - Present",
+        "title": "Bachelor's Degree in Software Engineering",
+        "organization": "Federal Institute of Paraná (IFPR) - Paranavaí",
+        "description": "Graduation focused on analysis, design, development and maintenance of software systems. Training with emphasis on requirements engineering, software architecture, data structures, databases, agile methodologies and project management.",
+        "tagone": "Software Architecture",
+        "tagtwo": "Databases",
+        "tagthree": "Data Structure",
+        "tagfour": "Agile Methodologies"
+      },
+      {
+        "period": "2021",
+        "title": "Programming Training - Edutech Paraná Program",
+        "organization": "Alura | Edutech",
+        "description": "Completion of various programming courses focusing on development in Python and programming logic. Learning included: Python language fundamentals, object-oriented programming, error handling, and Design Patterns concepts. Practical projects were also developed in JavaScript in Programming Logic I and II modules.",
+        "tagone": "Python",
+        "tagtwo": "Programming Logic",
+        "tagthree": "JavaScript",
+        "tagfour": "Design Patterns"
+      }
+    ]
+  },
+  "api": {
+    "title": "API",
+    "subtitle": "ADD AN API HERE"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's chat!",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your@email.com",
+    "messagePlaceholder": "Your message here...",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "description": "Have a project in mind or want to share an idea? Send me a message.",
+    "social": "Social Media"
+  },
+  "footer": {
+    "text": "Made with hate and coffee",
+    "year": "2026 ~ eliandrikas"
+  }
+}
