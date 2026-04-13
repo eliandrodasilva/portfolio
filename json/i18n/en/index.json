@@ -4,7 +4,7 @@
     "projects": "Projects",
     "skills": "Skills",
     "experience": "Experience",
-    "api": "API",
+    "api": "GitHub",
     "contact": "Contact"
   },
   "home": {
@@ -89,8 +89,12 @@
     ]
   },
   "api": {
-    "title": "API",
-    "subtitle": "ADD AN API HERE"
+    "title": "GitHub",
+    "repos": "Repos",
+    "followers": "Followers",
+    "following": "Following",
+    "viewProfile": "View Profile",
+    "error": "Unable to load the data from GitHub."
   },
   "contact": {
     "title": "Contact",

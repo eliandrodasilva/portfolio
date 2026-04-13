@@ -4,7 +4,7 @@
     "projects": "Projetos",
     "skills": "Habilidades",
     "experience": "Experiência",
-    "api": "API",
+    "api": "GitHub",
     "contact": "Contato"
   },
   "home": {
@@ -89,8 +89,12 @@
     ]
   },
   "api": {
-    "title": "API",
-    "subtitle": "COLOCAR UMA API AQUI"
+    "title": "GitHub",
+    "repos": "Repositórios",
+    "followers": "Seguidores",
+    "following": "Seguindo",
+    "viewProfile": "Ver Perfil",
+    "error": "Não foi possível carregar os dados do GitHub."
   },
   "contact": {
     "title": "Contato",
