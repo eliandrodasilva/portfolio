@@ -284,6 +284,20 @@ a {
   align-items: center;
   justify-content: center;
   padding: 5rem 1.5rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(6px) grayscale(30%) sepia(60%);
+  opacity: 0.4;
+  z-index: 1;
 }
 
 .home-container {
@@ -293,12 +307,15 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 2.5rem;
+  position: relative;
+  z-index: 2;
 }
 
 .home-photo {
   position: relative;
   width: 18rem;
   height: 18rem;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   transform: rotate(-2deg);
   overflow: hidden;
 }
@@ -332,7 +349,7 @@ a {
   width: fit-content;
 }
 .home-description {
-  color: var(--muted-foreground);
+  color: var(--foreground);
   max-width: 28rem;
 }
 
@@ -343,6 +360,7 @@ a {
   padding: 0.75rem 1.5rem;
   background-color: var(--primary);
   color: var(--primary-foreground);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
   font-size: 0.875rem;
   margin-top: 1rem;
   transition: opacity ease 0.3s;
