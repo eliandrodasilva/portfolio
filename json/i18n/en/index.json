@@ -8,11 +8,11 @@
     "contact": "Contact"
   },
   "home": {
-    "greeting": "Hello, I am",
+    "greeting": "Hello, I'm",
     "title": "Eliandro Gomes da Silva",
     "subtitle": "Fullstack Programmer",
-    "description": "Software Engineering student. I have knowledge in some programming languages and I'm always seeking to learn new technologies and improve my skills.",
-    "cta": "See my projects"
+    "description": "Software Engineering student. I have experience with several programming languages and I'm always looking to learn new technologies and improve my skills.",
+    "cta": "View my projects"
   },
   "projects": {
     "title": "Projects",
@@ -59,8 +59,8 @@
     "items": [
       {
         "period": "2025 - Present",
-        "title": "Developer Member - CodeLab IFPR",
-        "organization": "Laboratory of Extension in Technological Development",
+        "title": "Software Developer - CodeLab IFPR",
+        "organization": "Technology Development Extension Lab",
         "description": "Development of technological solutions on demand for external community, using software engineering best practices, Git versioning, agile methodologies and project-oriented architecture.",
         "tagone": "Scrum",
         "tagtwo": "Teamwork",
@@ -73,7 +73,7 @@
         "description": "Graduation focused on analysis, design, development and maintenance of software systems. Training with emphasis on requirements engineering, software architecture, data structures, databases, agile methodologies and project management.",
         "tagone": "Software Architecture",
         "tagtwo": "Databases",
-        "tagthree": "Data Structure",
+        "tagthree": "Data Structures",
         "tagfour": "Agile Methodologies"
       },
       {
@@ -107,7 +107,7 @@
     "social": "Social Media"
   },
   "footer": {
-    "text": "Made with hate and coffee",
+    "text": "Made with coffee and passion",
     "year": "2026 ~ eliandrikas"
   }
 }
