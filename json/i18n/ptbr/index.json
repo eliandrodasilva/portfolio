@@ -29,7 +29,7 @@
       },
       {
         "title": "Fleet Management System",
-        "description": "Sistema abrangente para gerenciamento de frotas de veículos e rastreamento de operações logísticas."
+        "description": "Um projeto de persistência em Java utilizando JPA e Hibernate, que implementa a otimização de rotas por meio do algoritmo de Dijkstra e conta com uma interface gráfica desenvolvida em Swing."
       },
       {
         "title": "risc16-archsim",

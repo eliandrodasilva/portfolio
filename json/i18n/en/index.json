@@ -29,7 +29,7 @@
       },
       {
         "title": "Fleet Management System",
-        "description": "Comprehensive system for managing vehicle fleets and tracking logistics operations."
+        "description": "A persistence project in Java with JPA and Hibernate. Implements route optimization via Dijkstra's algorithm and a Swing graphical interface."
       },
       {
         "title": "risc16-archsim",
