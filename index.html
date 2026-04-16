@@ -1,525 +1,596 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f0e8" />
-    <meta name="description" content="O meu portfólio. Um desenvolvedor fullstack. Projetos com Java, Python e React.">
-    <meta name="keywords" content="Eliandro, desenvolvedor, fullstack, portfolio, Java, Python, React">
-    <meta name="author" content="Eliandro Gomes da Silva">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f0e8" />
+  <meta name="description" content="O meu portfólio. Um desenvolvedor fullstack. Projetos com Java, Python e React." />
+  <meta name="keywords" content="Eliandro, desenvolvedor, fullstack, portfolio, Java, Python, React" />
+  <meta name="author" content="Eliandro Gomes da Silva" />
 
-    <title>Eliandro Gomes da Silva | Dev</title>
+  <title>Eliandro Gomes da Silva | Dev</title>
 
-    <link rel="icon" href="./assets/images/icon.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="./assets/images/icon.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav-inner">
-            <a href="#home" class="nav-logo">~ eli ~</a>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">~ eli ~</a>
 
-            <div class="nav-links" id="desktopNav">
-                <a href="#home" data-i18n="nav.home">Inicio</a>
-                <a href="#projects" data-i18n="nav.projects">Projetos</a>
-                <a href="#skills" data-i18n="nav.skills">Habilidades</a>
-                <a href="#experience" data-i18n="nav.experience">Experiencia</a>
-                <a href="#api" data-i18n="nav.api">API</a>
-                <a href="#contact" data-i18n="nav.contact">Contato</a>
-                <button class="hand-drawn-border lang-btn" id="langBtnDesktop" onclick="toggleLang()">EN</button>
-            </div>
+      <div class="nav-links" id="desktopNav">
+        <a href="#home" data-i18n="nav.home">Inicio</a>
+        <a href="#projects" data-i18n="nav.projects">Projetos</a>
+        <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+        <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+        <a href="#api" data-i18n="nav.api">API</a>
+        <a href="#contact" data-i18n="nav.contact">Contato</a>
+        <button class="hand-drawn-border lang-btn" id="langBtnDesktop" onclick="toggleLang()">
+          EN
+        </button>
+      </div>
 
-            <div class="nav-mobile-controls">
-                <button class="hand-drawn-border lang-btn" id="langBtnMobile" onclick="toggleLang()">EN</button>
-                <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">
-                    <img class="icon-xl" id="menuIconOpen" src="./assets/svgs/menu-bars.svg" alt="Botão de Menu" />
-                    <img class="icon-xl" id="menuIconClose" style="display:none" src="./assets/svgs/close-x.svg"
-                        alt="Botão de Fechar Menu" />
-                </button>
-            </div>
+      <div class="nav-mobile-controls">
+        <button class="hand-drawn-border lang-btn" id="langBtnMobile" onclick="toggleLang()">
+          EN
+        </button>
+        <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">
+          <img class="icon-xl" id="menuIconOpen" src="./assets/svgs/menu-bars.svg" alt="Botão de Menu" />
+          <img class="icon-xl" id="menuIconClose" style="display: none" src="./assets/svgs/close-x.svg"
+            alt="Botão de Fechar Menu" />
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMenu()" data-i18n="nav.home">Inicio</a>
+      <a href="#projects" onclick="closeMenu()" data-i18n="nav.projects">Projetos</a>
+      <a href="#skills" onclick="closeMenu()" data-i18n="nav.skills">Habilidades</a>
+      <a href="#experience" onclick="closeMenu()" data-i18n="nav.experience">Experiencia</a>
+      <a href="#api" onclick="closeMenu()" data-i18n="nav.api">API</a>
+      <a href="#contact" onclick="closeMenu()" data-i18n="nav.contact">Contato</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="home-section">
+      <video class="home-bg-video" autoplay muted loop>
+        <source src="./assets/videos/background.mp4" type="video/mp4" />
+      </video>
+      <div class="home-container">
+        <div class="home-glow-left"></div>
+        <div class="home-glow-right"></div>
+        <div class="home-glow-middle"></div>
+
+        <div class="tape">
+          <div class="home-photo">
+            <img src="assets/images/icon.jpg" />
+          </div>
         </div>
 
-        <div class="mobile-menu" id="mobileMenu">
-            <a href="#home" onclick="closeMenu()" data-i18n="nav.home">Inicio</a>
-            <a href="#projects" onclick="closeMenu()" data-i18n="nav.projects">Projetos</a>
-            <a href="#skills" onclick="closeMenu()" data-i18n="nav.skills">Habilidades</a>
-            <a href="#experience" onclick="closeMenu()" data-i18n="nav.experience">Experiencia</a>
-            <a href="#api" onclick="closeMenu()" data-i18n="nav.api">API</a>
-            <a href="#contact" onclick="closeMenu()" data-i18n="nav.contact">Contato</a>
+        <div class="home-text">
+          <p class="home-greeting" data-i18n="home.greeting">Olá, eu sou o</p>
+          <h1 class="home-name" data-i18n="home.title">
+            Eliandro Gomes da Silva
+          </h1>
+          <p class="home-underline hand-drawn-underline" data-i18n="home.subtitle">
+            Programador Fullstack
+          </p>
+          <p class="home-description" data-i18n="home.description">
+            Estudante de Engenharia de Software. Tenho conhecimento em algumas
+            linguagens de programação e estou sempre buscando aprender novas
+            tecnologias e aprimorar minhas habilidades.
+          </p>
+          <div>
+            <a href="#projects" class="home-project-button">
+              <span data-i18n="home.cta">Veja meus projetos</span>
+              <img class="icon icon-md" src="./assets/svgs/arrow-downward.svg" alt="seta apontando para baixo" />
+            </a>
+          </div>
         </div>
-    </nav>
+      </div>
+    </section>
 
-    <main>
-        <section id="home" class="home-section">
-            <video class="home-bg-video" autoplay muted loop>
-                <source src="./assets/videos/background.mp4" type="video/mp4">
-            </video>
-            <div class="home-container">
-                <div class="home-glow-left"></div>
-                <div class="home-glow-right"></div>
-                <div class="home-glow-middle"></div>
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="projects.title">Projetos</h2>
+          <p data-i18n="projects.subtitle">
+            Alguns dos meus trabalhos favoritos
+          </p>
+        </div>
 
+        <div class="projects-grid" id="projectsGrid">
+          <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/music-bro.svg" alt="imagem de pessoa escutando musica" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.0.title">etwahl</h3>
+              <p data-i18n="projects.items.0.description">
+                Bot de música para Discord, com suporte a reprodução via
+                YouTube.
+              </p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">Python</span>
+                <span class="hand-drawn-border project-tag">Nextcord</span>
+                <span class="hand-drawn-border project-tag">FFMpeg</span>
+                <span class="hand-drawn-border project-tag">Youtube API</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/etwahl" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+
+          <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/finance-app-amico.svg" alt="imagem de um app de financas" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.1.title">Capital Atelier</h3>
+              <p data-i18n="projects.items.1.description">XXX.</p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">React</span>
+                <span class="hand-drawn-border project-tag">Spring Boot</span>
+                <span class="hand-drawn-border project-tag">MySql</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/capital-atelier" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+
+          <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/city-bus-amico.svg" alt="imagem de um onibus estacionado" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.2.title">
+                Fleet Management System
+              </h3>
+              <p data-i18n="projects.items.2.description"></p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">Java</span>
+                <span class="hand-drawn-border project-tag">Swing</span>
+                <span class="hand-drawn-border project-tag">Maven</span>
+                <span class="hand-drawn-border project-tag">JPA</span>
+                <span class="hand-drawn-border project-tag">Hibernate</span>
+                <span class="hand-drawn-border project-tag">MySql</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/fleet-management-system" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+
+          <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/artificial-intelligence-amico.svg" alt="imagem de um cerebro representando uma ia" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.3.title">risc16-archsim</h3>
+              <p data-i18n="projects.items.3.description">
+                RISC 16-bit architecture simulator in Java. Monocycle and
+                pipelined models.
+              </p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">Java</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/risc16-archsim" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+
+          <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/software-engineer-amico.svg" alt="imagem representando um engenheiro de software" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.4.title">cache-sim</h3>
+              <p data-i18n="projects.items.4.description">
+                Memory hierarchy simulator in C++. Configurable
+                set-associative cache levels and main memory with read/write
+                policies
+              </p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">C++</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/cache-sim" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+
+          <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
+            <div class="project-img">
+              <img src="./assets/svgs/gaming-bro.svg" alt="imagem de pessoa jogando jogos em um" />
+            </div>
+            <div class="project-body">
+              <h3 data-i18n="projects.items.5.title">Memory Game</h3>
+              <p data-i18n="projects.items.5.description">
+                Game interativo com HTML, CSS e JavaScript, consumindo dados
+                de uma API externa.
+              </p>
+              <div class="project-tags">
+                <span class="hand-drawn-border project-tag">HTML</span>
+                <span class="hand-drawn-border project-tag">CSS</span>
+                <span class="hand-drawn-border project-tag">JavaScript</span>
+              </div>
+              <a href="https://github.com/eliandrodasilva/js-memory-game" class="project-link">
+                <span data-i18n="projects.viewProject">Ver Projeto</span>
+                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg" alt="Icone abrir link em nova aba" />
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="skills.title">Habilidades</h2>
+          <p data-i18n="skills.subtitle">
+            Ferramentas e tecnologias que uso no dia a dia
+          </p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <div class="tape">
+            <div class="hand-drawn-border skill-category">
+              <h3 class="doodle-underline" data-i18n="skills.languages">
+                Linguagens
+              </h3>
+              <div class="skill-tags">
+                <span class="hand-drawn-border skill-tag">Python</span>
+                <span class="hand-drawn-border skill-tag">JavaScript</span>
+                <span class="hand-drawn-border skill-tag">Java</span>
+                <span class="hand-drawn-border skill-tag">C++</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tape">
+            <div class="hand-drawn-border skill-category">
+              <h3 class="doodle-underline" data-i18n="skills.frameworks">
+                Frameworks
+              </h3>
+              <div class="skill-tags">
+                <span class="hand-drawn-border skill-tag">React</span>
+                <span class="hand-drawn-border skill-tag">Tailwind CSS</span>
+                <span class="hand-drawn-border skill-tag">Node.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tape">
+            <div class="hand-drawn-border skill-category">
+              <h3 class="doodle-underline" data-i18n="skills.tools">
+                Ferramentas
+              </h3>
+              <div class="skill-tags">
+                <span class="hand-drawn-border skill-tag">VS Code</span>
+                <span class="hand-drawn-border skill-tag">Git</span>
+                <span class="hand-drawn-border skill-tag">Figma</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tape">
+            <div class="hand-drawn-border skill-category">
+              <h3 class="doodle-underline" data-i18n="skills.database">
+                Bancos de Dados
+              </h3>
+              <div class="skill-tags">
+                <span class="hand-drawn-border skill-tag">PostgreSQL</span>
+                <span class="hand-drawn-border skill-tag">MySql</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="experience.title">Experiencia e Educação</h2>
+          <p data-i18n="experience.subtitle">Minha trajetoria profissional</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <img src="./assets/svgs/work.svg" alt="icone de profissão" />
+              </div>
+              <div class="timeline-content">
                 <div class="tape">
-                    <div class="home-photo">
-                        <!-- <img src="https://media1.tenor.com/m/PCJPPgHBMmgAAAAC/anime-animetape.gif" />  -->
-                        <img src="assets/images/icon.jpg" />
-                    </div>
-                </div>
-
-                <div class="home-text">
-                    <p class="home-greeting" data-i18n="home.greeting">Olá, eu sou o</p>
-                    <h1 class="home-name" data-i18n="home.title">Eliandro Gomes da Silva</h1>
-                    <p class="home-underline hand-drawn-underline" data-i18n="home.subtitle">Programador Fullstack</p>
-                    <p class="home-description" data-i18n="home.description">Estudante de Engenharia de Software. Tenho conhecimento em algumas
-                        linguagens de programação e estou
-                        sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.
+                  <div class="timeline-card">
+                    <span class="timeline-period" data-i18n="experience.items.0.period">2025 -
+                      Presente</span>
+                    <h3 class="timeline-title" data-i18n="experience.items.0.title">
+                      Membro Desenvolvedor - CodeLab IFPR
+                    </h3>
+                    <p class="timeline-org" data-i18n="experience.items.0.organization">
+                      Laboratório de Extensão em Desenvolvimento Tecnológico
                     </p>
-                    <div>
-                        <a href="#projects" class="home-project-button">
-                            <span data-i18n="home.cta">Veja meus projetos</span>
-                            <img class="icon icon-md" src="./assets/svgs/arrow-downward.svg"
-                                alt="seta apontando para baixo" />
-                        </a>
+                    <p class="timeline-desc" data-i18n="experience.items.0.description">
+                      Desenvolvimento de soluções tecnológicas sob demanda
+                      para comunidade externa, utilizando boas práticas de
+                      engenharia de software, versionamento com Git,
+                      metodologias ágeis e arquitetura orientada a projetos.
+                    </p>
+                    <div class="timeline-tags">
+                      <span class="tag" data-i18n="experience.items.0.tagone">Scrum</span>
+                      <span class="tag" data-i18n="experience.items.0.tagtwo">Trabalho em
+                        Equipe</span>
+                      <span class="tag" data-i18n="experience.items.0.tagthree">Extensão
+                        Universitária</span>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
 
-        <section id="projects" class="section">
-            <div class="section-inner">
-                <div class="section-header">
-                    <h2 data-i18n="projects.title">Projetos</h2>
-                    <p data-i18n="projects.subtitle">Alguns dos meus trabalhos favoritos</p>
+            <div class="timeline-item reverse">
+              <div class="timeline-dot">
+                <img src="./assets/svgs/school.svg" alt="icone de educação" />
+              </div>
+              <div class="timeline-content">
+                <div class="tape">
+                  <div class="timeline-card">
+                    <span class="timeline-period" data-i18n="experience.items.1.period">2024 -
+                      Presente</span>
+                    <h3 class="timeline-title" data-i18n="experience.items.1.title">
+                      Bacharelado em Engenharia de Software
+                    </h3>
+                    <p class="timeline-org" data-i18n="experience.items.1.organization">
+                      Instituto Federal do Paraná (IFPR) - Paranavaí
+                    </p>
+                    <p class="timeline-desc" data-i18n="experience.items.1.description">
+                      Graduação focada em análise, projeto, desenvolvimento e
+                      manutenção de sistemas de software. Formação com ênfase
+                      em engenharia de requisitos, arquitetura de software,
+                      estruturas de dados, banco de dados, metodologias ágeis
+                      e gestão de projetos.
+                    </p>
+                    <div class="timeline-tags">
+                      <span class="tag" data-i18n="experience.items.1.tagone">Arquitetura de
+                        Software</span>
+                      <span class="tag" data-i18n="experience.items.1.tagtwo">Banco de
+                        Dados</span>
+                      <span class="tag" data-i18n="experience.items.1.tagthree">Estruturas de
+                        Dados</span>
+                      <span class="tag" data-i18n="experience.items.1.tagfour">Metodologias
+                        Ágeis</span>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="projects-grid" id="projectsGrid">
-                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.0.title">etwahl</h3>
-                            <p data-i18n="projects.items.0.description">Bot de música para Discord, com suporte a
-                                reprodução via YouTube.</p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">Python</span>
-                                <span class="hand-drawn-border project-tag">Nextcord</span>
-                                <span class="hand-drawn-border project-tag">FFMpeg</span>
-                                <span class="hand-drawn-border project-tag">Youtube API</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/13/02/d2/1302d2645bbd69b86ff1b29caea60e2f.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.1.title">Capital Atelier</h3>
-                            <p data-i18n="projects.items.1.description">XXX.</p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">React</span>
-                                <span class="hand-drawn-border project-tag">Spring Boot</span>
-                                <span class="hand-drawn-border project-tag">MySql</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.2.title">Fleet Management System</h3>
-                            <p data-i18n="projects.items.2.description"></p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">Java</span>
-                                <span class="hand-drawn-border project-tag">Swing</span>
-                                <span class="hand-drawn-border project-tag">Maven</span>
-                                <span class="hand-drawn-border project-tag">JPA</span>
-                                <span class="hand-drawn-border project-tag">Hibernate</span>
-                                <span class="hand-drawn-border project-tag">MySql</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-
-                    
-
-                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.3.title">risc16-archsim</h3>
-                            <p data-i18n="projects.items.3.description"> RISC 16-bit architecture simulator in Java. Monocycle and pipelined models.</p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">Java</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="hand-drawn-border project-card" style="transform: rotate(1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/c4/11/09/c41109d3632ee6bc63f99e7dd0538f35.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.4.title">cache-sim</h3>
-                            <p data-i18n="projects.items.4.description">Memory hierarchy simulator in C++. Configurable set-associative cache levels and main memory with read/write policies</p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">C++</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="hand-drawn-border project-card" style="transform: rotate(-1deg)">
-                        <div class="project-img">
-                            <img src="https://i.pinimg.com/736x/ec/9f/46/ec9f4624a7ed58ae22deedaa703aa99c.jpg"
-                                loading="lazy" />
-                        </div>
-                        <div class="project-body">
-                            <h3 data-i18n="projects.items.5.title">Memory Game</h3>
-                            <p data-i18n="projects.items.5.description">Game interativo com HTML, CSS e
-                                JavaScript, consumindo dados de uma API externa.</p>
-                            <div class="project-tags">
-                                <span class="hand-drawn-border project-tag">HTML</span>
-                                <span class="hand-drawn-border project-tag">CSS</span>
-                                <span class="hand-drawn-border project-tag">JavaScript</span>
-                            </div>
-                            <a href="#" class="project-link">
-                                <span data-i18n="projects.viewProject">Ver Projeto</span>
-                                <img class="icon icon-sm" src="./assets/svgs/open-in-new.svg"
-                                    alt="Icone abrir link em nova aba">
-                            </a>
-                        </div>
-                    </article>
-                </div>
+              </div>
             </div>
-        </section>
 
-        <section id="skills" class="section section-alt">
-            <div class="section-inner">
-                <div class="section-header">
-                    <h2 data-i18n="skills.title">Habilidades</h2>
-                    <p data-i18n="skills.subtitle">Ferramentas e tecnologias que uso no dia a dia</p>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <img src="./assets/svgs/school.svg" alt="icone de educação" />
+              </div>
+              <div class="timeline-content">
+                <div class="tape">
+                  <div class="timeline-card">
+                    <span class="timeline-period" data-i18n="experience.items.2.period">2021</span>
+                    <h3 class="timeline-title" data-i18n="experience.items.2.title">
+                      Formação em Programação - Programa Edutech Paraná
+                    </h3>
+                    <p class="timeline-org" data-i18n="experience.items.2.organization">
+                      Alura | Edutech
+                    </p>
+                    <p class="timeline-desc" data-i18n="experience.items.2.description">
+                      Conclusão de diversos cursos de programação com foco em
+                      desenvolvimento em Python e lógica de programação.
+                      Aprendizados incluem: fundamentos da linguagem Python,
+                      orientação a objetos, tratamento de erros, além de
+                      conceitos de Design Patterns. Também foram desenvolvidos
+                      projetos práticos em JavaScript nos módulos de Lógica de
+                      Programação I e II.
+                    </p>
+                    <div class="timeline-tags">
+                      <span class="tag" data-i18n="experience.items.2.tagone">Python</span>
+                      <span class="tag" data-i18n="experience.items.2.tagtwo">Lógica de
+                        Programação</span>
+                      <span class="tag" data-i18n="experience.items.2.tagthree">JavaScript</span>
+                      <span class="tag" data-i18n="experience.items.2.tagfour">Design
+                        Patterns</span>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="skills-grid" id="skillsGrid">
-                    <div class="tape">
-                        <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline" data-i18n="skills.languages">Linguagens</h3>
-                            <div class="skill-tags">
-                                <span class="hand-drawn-border skill-tag">Python</span>
-                                <span class="hand-drawn-border skill-tag">JavaScript</span>
-                                <span class="hand-drawn-border skill-tag">Java</span>
-                                <span class="hand-drawn-border skill-tag">C++</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tape">
-                        <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline" data-i18n="skills.frameworks">Frameworks</h3>
-                            <div class="skill-tags">
-                                <span class="hand-drawn-border skill-tag">React</span>
-                                <span class="hand-drawn-border skill-tag">Tailwind CSS</span>
-                                <span class="hand-drawn-border skill-tag">Node.js</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tape">
-                        <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline" data-i18n="skills.tools">Ferramentas</h3>
-                            <div class="skill-tags">
-                                <span class="hand-drawn-border skill-tag">VS Code</span>
-                                <span class="hand-drawn-border skill-tag">Git</span>
-                                <span class="hand-drawn-border skill-tag">Figma</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tape">
-                        <div class="hand-drawn-border skill-category">
-                            <h3 class="doodle-underline" data-i18n="skills.database">Bancos de Dados</h3>
-                            <div class="skill-tags">
-                                <span class="hand-drawn-border skill-tag">PostgreSQL</span>
-                                <span class="hand-drawn-border skill-tag">MySql</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <section id="experience" class="section">
-            <div class="section-inner">
-                <div class="section-header">
-                    <h2 data-i18n="experience.title">Experiencia e Educação</h2>
-                    <p data-i18n="experience.subtitle">Minha trajetoria profissional</p>
+    <section id="api" class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="api.title">GitHub</h2>
+        </div>
+
+        <div class="github-wrapper" id="githubWrapper">
+          <div class="github-content" id="githubContent" style="display: none">
+            <div class="hand-drawn-border github-profile-card tape">
+              <div class="github-profile-left">
+                <div class="github-avatar-wrap">
+                  <img id="ghAvatar" src="" alt="GitHub Avatar" class="github-avatar" />
                 </div>
-
-                <div class="timeline">
-                    <div class="timeline-line"></div>
-
-                    <div class="timeline-items">
-                        <div class="timeline-item">
-                            <div class="timeline-dot">
-                                <img src="./assets/svgs/work.svg" alt="icone de profissão">
-                            </div>
-                            <div class="timeline-content">
-                                <div class="tape">
-                                    <div class="timeline-card">
-                                        <span class="timeline-period" data-i18n="experience.items.0.period">2025 - Presente</span>
-                                        <h3 class="timeline-title" data-i18n="experience.items.0.title">Membro Desenvolvedor - CodeLab IFPR</h3>
-                                        <p class="timeline-org" data-i18n="experience.items.0.organization">Laboratório de Extensão em Desenvolvimento Tecnológico
-                                        </p>
-                                        <p class="timeline-desc" data-i18n="experience.items.0.description">Desenvolvimento de soluções tecnológicas sob demanda
-                                            para
-                                            comunidade externa,
-                                            utilizando boas práticas de engenharia de software, versionamento com Git,
-                                            metodologias ágeis e arquitetura orientada a projetos.</p>
-                                        <div class="timeline-tags">
-                                            <span class="tag" data-i18n="experience.items.0.tagone">Scrum</span>
-                                            <span class="tag" data-i18n="experience.items.0.tagtwo">Trabalho em Equipe</span>
-                                            <span class="tag" data-i18n="experience.items.0.tagthree">Extensão Universitária</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item reverse">
-                            <div class="timeline-dot">
-                                <img src="./assets/svgs/school.svg" alt="icone de educação">
-                            </div>
-                            <div class="timeline-content">
-                                <div class="tape">
-                                    <div class="timeline-card">
-                                        <span class="timeline-period" data-i18n="experience.items.1.period">2024 - Presente</span>
-                                        <h3 class="timeline-title" data-i18n="experience.items.1.title">Bacharelado em Engenharia de Software</h3>
-                                        <p class="timeline-org" data-i18n="experience.items.1.organization">Instituto Federal do Paraná (IFPR) - Paranavaí</p>
-                                        <p class="timeline-desc" data-i18n="experience.items.1.description">Graduação focada em análise, projeto, desenvolvimento e
-                                            manutenção de sistemas de software.
-                                            Formação com ênfase em engenharia de requisitos, arquitetura de software,
-                                            estruturas de dados, banco de dados, metodologias ágeis e gestão de
-                                            projetos.
-                                        </p>
-                                        <div class="timeline-tags">
-                                            <span class="tag" data-i18n="experience.items.1.tagone">Arquitetura de Software</span>
-                                            <span class="tag" data-i18n="experience.items.1.tagtwo">Banco de Dados</span>
-                                            <span class="tag" data-i18n="experience.items.1.tagthree">Estruturas de Dados</span>
-                                            <span class="tag" data-i18n="experience.items.1.tagfour">Metodologias Ágeis</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="timeline-item">
-                            <div class="timeline-dot">
-                                <img src="./assets/svgs/school.svg" alt="icone de educação">
-                            </div>
-                            <div class="timeline-content">
-                                <div class="tape">
-                                    <div class="timeline-card">
-                                        <span class="timeline-period" data-i18n="experience.items.2.period">2021</span>
-                                        <h3 class="timeline-title" data-i18n="experience.items.2.title">Formação em Programação - Programa Edutech Paraná
-                                        </h3>
-                                        <p class="timeline-org" data-i18n="experience.items.2.organization">Alura | Edutech</p>
-                                        <p class="timeline-desc" data-i18n="experience.items.2.description">
-                                            Conclusão de diversos cursos de programação com foco em desenvolvimento em
-                                            Python e lógica de programação.
-                                            Aprendizados incluem: fundamentos da linguagem Python,
-                                            orientação a objetos, tratamento de erros, além de conceitos de Design
-                                            Patterns.
-                                            Também foram desenvolvidos projetos práticos em JavaScript nos módulos de
-                                            Lógica
-                                            de Programação I e II.
-                                        </p>
-                                        <div class="timeline-tags">
-                                            <span class="tag" data-i18n="experience.items.2.tagone">Python</span>
-                                            <span class="tag" data-i18n="experience.items.2.tagtwo">Lógica de Programação</span>
-                                            <span class="tag" data-i18n="experience.items.2.tagthree">JavaScript</span>
-                                            <span class="tag" data-i18n="experience.items.2.tagfour">Design Patterns</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="github-stats-row">
+                  <div class="github-stat">
+                    <span class="github-stat-value" id="ghRepos">—</span>
+                    <span class="github-stat-label" data-i18n="api.repos">Repos</span>
+                  </div>
+                  <div class="github-stat-divider"></div>
+                  <div class="github-stat">
+                    <span class="github-stat-value" id="ghFollowers">—</span>
+                    <span class="github-stat-label" data-i18n="api.followers">Seguidores</span>
+                  </div>
+                  <div class="github-stat-divider"></div>
+                  <div class="github-stat">
+                    <span class="github-stat-value" id="ghFollowing">—</span>
+                    <span class="github-stat-label" data-i18n="api.following">Seguindo</span>
+                  </div>
                 </div>
+              </div>
+              <div class="github-profile-right">
+                <div class="github-profile-header">
+                  <div>
+                    <h3 class="github-name" id="ghName">—</h3>
+                    <p class="github-login" id="ghLogin">—</p>
+                  </div>
+                  <a id="ghProfileLink" href="#" target="_blank" rel="noopener noreferrer"
+                    class="hand-drawn-border github-link-btn">
+                    <span data-i18n="api.viewProfile">Ver Perfil</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+                <p class="github-bio" id="ghBio">—</p>
+                <div class="github-meta">
+                  <span class="github-meta-item" id="ghLocation" style="display: none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <span id="ghLocationText"></span>
+                  </span>
+                  <span class="github-meta-item" id="ghCompany" style="display: none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                    </svg>
+                    <span id="ghCompanyText"></span>
+                  </span>
+                  <span class="github-meta-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                      <line x1="16" y1="2" x2="16" y2="6" />
+                      <line x1="8" y1="2" x2="8" y2="6" />
+                      <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <span id="ghCreatedAt"></span>
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="github-error" id="githubError" style="display: none">
+            <p data-i18n="api.error">
+              Não foi possível carregar os dados do GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 data-i18n="contact.title">Contato</h2>
+          <p data-i18n="contact.subtitle">Vamos conversar!</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="hand-drawn-border contact-form-wrapper">
+            <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+              <div>
+                <label for="contactName" data-i18n-label="contact.name">Nome</label>
+                <input class="hand-drawn-border" type="text" id="contactName" required
+                  data-i18n-placeholder="contact.namePlaceholder" placeholder="Seu nome" />
+              </div>
+              <div>
+                <label for="contactEmail" data-i18n-label="contact.email">E-mail</label>
+                <input class="hand-drawn-border" type="email" id="contactEmail" required
+                  data-i18n-placeholder="contact.emailPlaceholder" placeholder="seu@email.com" />
+              </div>
+              <div>
+                <label for="contactMessage" data-i18n-label="contact.message">Mensagem</label>
+                <textarea class="hand-drawn-border" id="contactMessage" required rows="5"
+                  data-i18n-placeholder="contact.messagePlaceholder" placeholder="Sua mensagem aqui..."></textarea>
+              </div>
+              <button type="submit" class="contact-submit hand-drawn-border">
+                <span data-i18n="contact.send">Enviar Mensagem</span>
+                <img src="./assets/svgs/send.svg" alt="Icone de enviar mensagem" class="icon-lg" />
+              </button>
+              <p class="contact-success" id="contactSuccess" data-i18n="contact.success">
+                Mensagem enviada com sucesso!
+              </p>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <p data-i18n="contact.description">
+              Tem um projeto em mente ou quer trocar uma ideia? Me mande uma
+              mensagem.
+            </p>
+            <div>
+              <a href="mailto:eliandro.gomes42@gmail.com" class="contact-email">
+                <img src="./assets/svgs/mail.svg" alt="Icone de email" class="icon-xl" />
+                <span>eliandro.gomes42@gmail.com</span>
+              </a>
             </div>
-        </section>
-
-        <section id="api" class="section section-alt">
-            <div class="section-inner">
-                <div class="section-header">
-                    <h2 data-i18n="api.title">GitHub</h2>
-                </div>
- 
-                <div class="github-wrapper" id="githubWrapper">
-                    <div class="github-content" id="githubContent" style="display:none">
-                        <div class="hand-drawn-border github-profile-card tape">
-                            <div class="github-profile-left">
-                                <div class="github-avatar-wrap">
-                                    <img id="ghAvatar" src="" alt="GitHub Avatar" class="github-avatar" />
-                                </div>
-                                <div class="github-stats-row">
-                                    <div class="github-stat">
-                                        <span class="github-stat-value" id="ghRepos">—</span>
-                                        <span class="github-stat-label" data-i18n="api.repos">Repos</span>
-                                    </div>
-                                    <div class="github-stat-divider"></div>
-                                    <div class="github-stat">
-                                        <span class="github-stat-value" id="ghFollowers">—</span>
-                                        <span class="github-stat-label" data-i18n="api.followers">Seguidores</span>
-                                    </div>
-                                    <div class="github-stat-divider"></div>
-                                    <div class="github-stat">
-                                        <span class="github-stat-value" id="ghFollowing">—</span>
-                                        <span class="github-stat-label" data-i18n="api.following">Seguindo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="github-profile-right">
-                                <div class="github-profile-header">
-                                    <div>
-                                        <h3 class="github-name" id="ghName">—</h3>
-                                        <p class="github-login" id="ghLogin">—</p>
-                                    </div>
-                                    <a id="ghProfileLink" href="#" target="_blank" rel="noopener noreferrer" class="hand-drawn-border github-link-btn">
-                                        <span data-i18n="api.viewProfile">Ver Perfil</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                                    </a>
-                                </div>
-                                <p class="github-bio" id="ghBio">—</p>
-                                <div class="github-meta">
-                                    <span class="github-meta-item" id="ghLocation" style="display:none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                        <span id="ghLocationText"></span>
-                                    </span>
-                                    <span class="github-meta-item" id="ghCompany" style="display:none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                                        <span id="ghCompanyText"></span>
-                                    </span>
-                                    <span class="github-meta-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                                        <span id="ghCreatedAt"></span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
- 
-                    <div class="github-error" id="githubError" style="display:none">
-                        <p data-i18n="api.error">Não foi possível carregar os dados do GitHub.</p>
-                    </div>
-                </div>
+            <div>
+              <h3 class="social-title" data-i18n="contact.social">
+                Redes Sociais
+              </h3>
+              <div class="social-links">
+                <a href="https://github.com/eliandrodasilva" target="_blank" rel="noopener noreferrer"
+                  class="social-link hand-drawn-border" aria-label="GitHub">
+                  <img src="./assets/svgs/github.svg" alt="icone do github" class="icon-xl" />
+                </a>
+                <a href="https://www.linkedin.com/in/eliandrodasilva/" target="_blank" rel="noopener noreferrer"
+                  class="social-link hand-drawn-border" aria-label="LinkedIn">
+                  <img src="./assets/svgs/linkedin.svg" alt="icone do linkedin" class="icon-xl" />
+                </a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section id="contact" class="section">
-            <div class="section-inner">
-                <div class="section-header">
-                    <h2 data-i18n="contact.title">Contato</h2>
-                    <p data-i18n="contact.subtitle">Vamos conversar!</p>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="hand-drawn-border contact-form-wrapper">
-                        <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
-                            <div>
-                                <label for="contactName" data-i18n-label="contact.name">Nome</label>
-                                <input class="hand-drawn-border" type="text" id="contactName" required data-i18n-placeholder="contact.namePlaceholder" placeholder="Seu nome" />
-                            </div>
-                            <div>
-                                <label for="contactEmail" data-i18n-label="contact.email">E-mail</label>
-                                <input class="hand-drawn-border" type="email" id="contactEmail" required data-i18n-placeholder="contact.emailPlaceholder" placeholder="seu@email.com" />
-                            </div>
-                            <div>
-                                <label for="contactMessage" data-i18n-label="contact.message">Mensagem</label>
-                                <textarea class="hand-drawn-border" id="contactMessage" required rows="5"
-                                    data-i18n-placeholder="contact.messagePlaceholder" placeholder="Sua mensagem aqui..."></textarea>
-                            </div>
-                            <button type="submit" class="contact-submit hand-drawn-border">
-                                <span data-i18n="contact.send">Enviar Mensagem</span>
-                                <img src="./assets/svgs/send.svg" alt="Icone de enviar mensagem" class="icon-lg" />
-                            </button>
-                            <p class="contact-success" id="contactSuccess" data-i18n="contact.success">Mensagem
-                                enviada com
-                                sucesso!</p>
-                        </form>
-                    </div>
-
-                    <div class="contact-info">
-                        <p data-i18n="contact.description">Tem um projeto em mente ou quer trocar uma ideia? Me mande uma mensagem.</p>
-                        <div>
-                            <a href="mailto:eliandro.gomes42@gmail.com" class="contact-email">
-                                <img src="./assets/svgs/mail.svg" alt="Icone de email" class="icon-xl" />
-                                <span>eliandro.gomes42@gmail.com</span>
-                            </a>
-                        </div>
-                        <div>
-                            <h3 class="social-title" data-i18n="contact.social">Redes Sociais</h3>
-                            <div class="social-links">
-                                <a href="https://github.com/eliandrodasilva" target="_blank" rel="noopener noreferrer"
-                                    class="social-link hand-drawn-border" aria-label="GitHub">
-                                    <img src="./assets/svgs/github.svg" alt="icone do github" class="icon-xl">
-                                </a>
-                                <a href="https://www.linkedin.com/in/eliandrodasilva/" target="_blank" rel="noopener noreferrer"
-                                    class="social-link hand-drawn-border" aria-label="LinkedIn">
-                                    <img src="./assets/svgs/linkedin.svg" alt="icone do linkedin" class="icon-xl" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p class="footer-text">
-            <span data-i18n="footer.text">Feito com ódio e café</span>
-            <img src="./assets/svgs/coffee.svg" alt="Icone de café" class="icon-xl" />
-        </p>
-        <p class="footer-sub" data-i18n="footer.year">2026 ~ eliandrikas</p>
-    </footer>
-    <script src="js/main.js"></script>
+  <footer class="footer">
+    <p class="footer-text">
+      <span data-i18n="footer.text">Feito com ódio e café</span>
+      <img src="./assets/svgs/coffee.svg" alt="Icone de café" class="icon-xl" />
+    </p>
+    <small style="opacity: 0.6">
+      Illustrations by
+      <a href="https://storyset.com" target="_blank"> Storyset </a>
+    </small>
+    <p class="footer-sub" data-i18n="footer.year">2026 ~ eliandrikas</p>
+  </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

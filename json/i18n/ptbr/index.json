@@ -20,7 +20,7 @@
     "viewProject": "Ver Projeto",
     "items": [
       {
-        "title": "etwahl",
+        "title": "Etwahl",
         "description": "Bot de música para Discord, com suporte a reprodução via YouTube."
       },
       {
@@ -29,14 +29,14 @@
       },
       {
         "title": "Fleet Management System",
-        "description": "Um projeto de persistência em Java utilizando JPA e Hibernate, que implementa a otimização de rotas por meio do algoritmo de Dijkstra e conta com uma interface gráfica desenvolvida em Swing."
+        "description": "Um projeto de persistência em Java com JPA e Hibernate, que implementa a otimização de rotas e uma interface em Swing."
       },
       {
-        "title": "risc16-archsim",
+        "title": "Risc16 Archsim",
         "description": "Simulador de arquitetura RISC 16-bit em Java. Modelos monociclo e pipeline."
       },
       {
-        "title": "cache-sim",
+        "title": "Cache Sim",
         "description": "Simulador de hierarquia de memória em C++. Níveis de cache set-associative configurável e memória principal com políticas de leitura/escrita."
       },
       {

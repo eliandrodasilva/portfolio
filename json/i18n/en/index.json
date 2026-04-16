@@ -20,7 +20,7 @@
     "viewProject": "View Project",
     "items": [
       {
-        "title": "etwahl",
+        "title": "Etwahl",
         "description": "Music bot for Discord, with support for YouTube playback."
       },
       {
@@ -29,14 +29,14 @@
       },
       {
         "title": "Fleet Management System",
-        "description": "A persistence project in Java with JPA and Hibernate. Implements route optimization via Dijkstra's algorithm and a Swing graphical interface."
+        "description": "A persistence project in Java with JPA and Hibernate. Implements route optimization and a Swing graphical interface."
       },
       {
-        "title": "risc16-archsim",
+        "title": "Risc16 Archsim",
         "description": "RISC 16-bit architecture simulator in Java. Monocycle and pipelined models."
       },
       {
-        "title": "cache-sim",
+        "title": "Cache Sim",
         "description": "Memory hierarchy simulator in C++. Configurable set-associative cache levels and main memory with read/write policies."
       },
       {
@@ -112,6 +112,7 @@
   },
   "footer": {
     "text": "Made with coffee and passion",
+    "description": "Illustrations by",
     "year": "2026 ~ eliandrikas"
   }
 }
