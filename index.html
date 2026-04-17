@@ -29,16 +29,16 @@
         <a href="#experience" data-i18n="nav.experience">Experiencia</a>
         <a href="#api" data-i18n="nav.api">API</a>
         <a href="#contact" data-i18n="nav.contact">Contato</a>
-        <button class="hand-drawn-border lang-btn" id="langBtnDesktop" onclick="toggleLang()">
+        <button class="hand-drawn-border lang-btn" id="langBtnDesktop">
           EN
         </button>
       </div>
 
       <div class="nav-mobile-controls">
-        <button class="hand-drawn-border lang-btn" id="langBtnMobile" onclick="toggleLang()">
+        <button class="hand-drawn-border lang-btn" id="langBtnMobile">
           EN
         </button>
-        <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">
+        <button class="menu-btn" id="menuToggle">
           <img class="icon-xl" id="menuIconOpen" src="./assets/svgs/menu-bars.svg" alt="Botão de Menu" />
           <img class="icon-xl" id="menuIconClose" style="display: none" src="./assets/svgs/close-x.svg"
             alt="Botão de Fechar Menu" />
@@ -47,12 +47,12 @@
     </div>
 
     <div class="mobile-menu" id="mobileMenu">
-      <a href="#home" onclick="closeMenu()" data-i18n="nav.home">Inicio</a>
-      <a href="#projects" onclick="closeMenu()" data-i18n="nav.projects">Projetos</a>
-      <a href="#skills" onclick="closeMenu()" data-i18n="nav.skills">Habilidades</a>
-      <a href="#experience" onclick="closeMenu()" data-i18n="nav.experience">Experiencia</a>
-      <a href="#api" onclick="closeMenu()" data-i18n="nav.api">API</a>
-      <a href="#contact" onclick="closeMenu()" data-i18n="nav.contact">Contato</a>
+      <a href="#home" data-i18n="nav.home">Inicio</a>
+      <a href="#projects" data-i18n="nav.projects">Projetos</a>
+      <a href="#skills" data-i18n="nav.skills">Habilidades</a>
+      <a href="#experience" data-i18n="nav.experience">Experiencia</a>
+      <a href="#api" data-i18n="nav.api">API</a>
+      <a href="#contact" data-i18n="nav.contact">Contato</a>
     </div>
   </nav>
 
@@ -590,7 +590,7 @@
     </small>
     <p class="footer-sub" data-i18n="footer.year">2026 ~ eliandrikas</p>
   </footer>
-  <script src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
